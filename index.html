@@ -20,15 +20,21 @@
 <body>
 
 <div id="fittingBox">
-
+    <img src="img/img1.jpg"/>
+    <img src="img/img2.jpg"/>
+    <img src="img/img3.jpg"/>
+    <img src="img/img4.jpg"/>
+    <img src="img/img5.jpg"/>
+    <img src="img/img6.jpg"/>
+    <img src="img/img7.jpg"/>
+    <img src="img/img8.jpg"/>
+    <img src="img/img9.jpg"/>
+    <img src="img/img10.jpg"/>
+    <img src="img/img11.jpg"/>
+    <img src="img/img12.jpg"/>
+    <img src="img/img13.jpg"/>
 </div>
 <script>
-    let fittingBox = document.querySelector('#fittingBox');
-    for(let i = 1; i < 14; i++){
-        let child = document.createElement('img');
-        child.src = 'img/img'+i+'.jpg';
-        fittingBox.appendChild(child);
-    }
     window.onload = function () {
         let fitting = new fittingItems({
             boxSelector:'#fittingBox',
