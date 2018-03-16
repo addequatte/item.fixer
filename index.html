@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="build/fittingItems.js"></script>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    #fittingBox{
+        width: 640px;
+    }
+    img{
+        max-width: 100%;
+        float: left;
+    }
+</style>
+<body>
+
+<div id="fittingBox">
+
+</div>
+<script>
+    let fittingBox = document.querySelector('#fittingBox');
+    for(let i = 1; i < 14; i++){
+        let child = document.createElement('img');
+        child.src = 'img/img'+i+'.jpg';
+        fittingBox.appendChild(child);
+    }
+    window.onload = function () {
+        let fitting = new fittingItems({
+            boxSelector:'#fittingBox',
+            rowCount:4
+        });
+    };
+</script>
+</body>
+</html>
